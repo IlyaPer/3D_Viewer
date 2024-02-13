@@ -1,71 +1,8 @@
-# 3DViewer v2.0
+# 3D_Viewer
+Qt desktop application with visualizing, rendering and transformation of .obj models. Implemented via cpp with patterns facade, command, singletone.
 
+# Technical Assignment of the project
 Implementation of 3DViewer v2.0
-
-The russian version of the task can be found in the repository.
-
-
-## Contents
-
-1. [Chapter I](#chapter-i) \
-   1.1. [Introduction](#introduction)
-2. [Chapter II](#chapter-ii) \
-   2.1. [Information](#information)
-3. [Chapter III](#chapter-iii) \
-   3.1. [Part 1](#part-1-3dviewer-v20) \
-   3.2. [Part 2](#part-2-bonus-settings) \
-   3.3. [Part 3](#part-3-bonus-record)
-
-
-## Chapter I
-
-![3dviewer2.0](misc/images/3dviewer2.0.PNG)
-
-Somewhere near a coffee machine in the 90s:
-
-*"It's simple, my friend. It will be a cartoon about toys, like the short that won us the Oscar. The natural shape of the toys will lend itself perfectly to the low-poly 3D models we'll be able to animate. And they are toys, so bad facial expressions won't be a problem. I've already got a plot in mind. Let's bring it to life! The story will be based on the relationship between the toys and a child."*
-
-*"Sounds familiar and interesting!"*
-
-*"It is. You should go to your team and start developing 3D modelling software as soon as possible. If we want to make this cartoon, we need our own software tools. The ones on the market will only allow us to animate a wooden pyramid, and then only in the form of a cube."*
-
-*"You know, I think the same. I even have some ideas somewhere."*
-
-*"I think we should start with the most important thing - the preview screen. Good luck!"* With those words, Lasseter finished his coffee, washed his mug and left the break room, leaving you alone with your thoughts. The door closed slowly after he left, leaving only the painfully familiar white glow in the cracks.
-
-*"It would be convenient to prepare several rendering strategies in advance..."* you said thoughtfully out loud. *"And also hide all the business logic implementation behind some kind of facade, then it will be easier to work with the UI. And commands to handle user actions, right, right..."* 
-
-The sudden sound of a dial-up modem somewhere in the distance distracted you from your thoughts. You urgently needed to discuss the task with the team and design the architecture of the future application. Time waits for no one! \
-You opened the door and a bright light flooded your face. Your determination is unshakable; the planned cartoon is destined to make history!
-
-## Introduction
-
-In this project you’ll need to implement an application for viewing 3D wireframe models in C++ in the object-oriented programming paradigm, implementing the same functions as the previously developed application in 3DViewer v1.0 project.
-
-
-## Chapter II
-
-## Information
-
-### Design patterns
-
-Any human activity, such as cooking or nuclear physics experiments, has a set of established practices that deal with basic elementary tasks. They do not require an individual approach and are usually solved by well-established approaches developed over time, based on the experience of previous cooks or nuclear physicists. For example, baking a cake, even an unusual one, is likely to require dough whose cooking technology is known in advance and does not usually require any creativity. It's the same with programming: when designing, you often have elementary tasks that a large number of programmers have faced before you, and their experience has developed into established design patterns.
-
-**Design pattern** describes a frequently recurring application design problem and a universal way of solving it.
-In other words, to a programmer, a design pattern is nothing more than a building block, an elementary unit that is implemented when a typical subtask occurs within a project.
-
-Design patterns are usually divided into three groups: creative, structural and behavioural. See Resources for more information about design patterns. \
-You have already encountered the use of established practices (patterns) in application design in the SmartCalc v2.0 project (MVC pattern). As a reminder, MVC in one form or another is one of the most common solutions in terms of code structuring during UI application development.
-The user interface and the business logic with its controller are usually separated into two different global domains: the interface domain and the business logic domain.
-
-The interface domain is only responsible for displaying the interface and passing commands to the business logic domain. Data loaded from a file should not be stored in the interface domain.
-
-The business logic domain is responsible for the main functionality of the system. This is where the loaded data is stored and all operations on it are performed. This is also where the rendering takes place.
-
-You can see an example of a suggested class diagram for a business logic domain in materials.
-
-
-## Chapter III
 
 ## Part 1. 3DViewer v2.0
 
@@ -115,5 +52,3 @@ Develop a program to visualise the 3D wireframe models.
 
 - The program must allow saving the captured (rendered) images as bmp and jpeg files;
 - The program must allow recording small screencasts - the current custom affine transformation of the loaded object into gif-animation (640x480, 10fps, 5s) by a special button.
-
-💡 [Tap here](https://forms.yandex.ru/cloud/64181b3c69387223f9a12877/) **to leave your feedback on the project**. Product Team really tries to make your educational experience better.
